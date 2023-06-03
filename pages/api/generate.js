@@ -44,7 +44,7 @@ export default function handler(req, res) {
 					// message is this unless [DONE] -> {"id":"cmpl-7MwTOu3fnOCKxMMYvBmrLPfZ2hRxJ","object":"text_completion","created":1685702342,"choices":[{"text":" it","index":0,"logprobs":null,"finish_reason":null}],"model":"text-davinci-003"}
 					const parsed = JSON.parse(message)
 
-					// parse to json object
+					// parse to js object
 					const data = {response: parsed.choices[0].text}
 
 					// adding "data: " as it is a server sent event
