@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export default function Home() {
 	const [prompt, setPrompt] = useState('')
