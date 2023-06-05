@@ -85,7 +85,7 @@ export default function Home() {
 				<form onSubmit={handleSubmit} className={'w-[80%] space-y-2 flex flex-col mr-auto'}>
 					<label htmlFor={'prompt'}>Enter a prompt</label>
 					<input id={'prompt'} name={'prompt'} type={'text'} onChange={handleChange}
-								 className={'border border-purple-500 py-2 px-4 rounded-md'} placeholder={'Type here...'}/>
+								 className={'border border-purple-500 py-2 px-4 rounded-md'} placeholder={'Type here...'} autoComplete={'off'}/>
 					<div className={'text-right'}>
 						<button
 							disabled={generating}

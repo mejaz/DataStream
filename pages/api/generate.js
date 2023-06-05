@@ -13,7 +13,7 @@ export default function handler(req, res) {
 		const response = openai.createCompletion({
 			model: "text-davinci-003",
 			prompt,
-			max_tokens: 50,
+			max_tokens: 100,
 			temperature: 0.7,
 			stream: true,  // mandatory for streaming
 		}, {responseType: 'stream'});
